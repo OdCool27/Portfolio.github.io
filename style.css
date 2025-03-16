@@ -16,26 +16,15 @@
     --transition: 300ms ease-in-out;
 }
 
+* {
+    outline: 1px solid red;
+}
 
 
 html{
     box-sizing: border-box;/*padding doesnt add to width or height of elements*/
     font-size: 100%;
     scroll-behavior: smooth;
-}
-
-/*
-*{
-    outline: 1px solid red !important;
-    border: 1px solid yellow;
-}*/
-
-
-@media (max-width:768px){
-    body, html{ 
-        overflow-x:hidden;
-        width:100vw;
-    }
 }
 
 h1, h2, h3, p{
@@ -212,7 +201,7 @@ body{
 .imgNHeading{
     padding-top: 30px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     margin-left: 10px;
@@ -246,19 +235,20 @@ body{
     .hero_rings{
         left:-30%;
     }
-
     
 }
 
-@media (min-width:800px){
+@media (min-width:768px){
     .imgNHeading{
         flex-direction: row-reverse;
     }
+}
+
+
+@media (min-width:800px){
     .hero_rings{
         left:-5%;
     }
-
-    
 }
 
 @media (max-width:800px){
@@ -274,7 +264,6 @@ body{
 
     .hero_image{
         margin:15px 20px;
-        transform: scale(0.7);
     }
 }
 
@@ -324,6 +313,7 @@ body{
 .projects {
     padding: 60px;
     border-bottom: 2px solid var(--text2);
+    width:100%;
 }
 
 .projects p {
@@ -342,7 +332,7 @@ body{
     overflow: hidden;
     width: 200px;
     height: 200px;
-    margin: 30px;
+    margin: 20px;
 }
 
 .img-container {
@@ -400,7 +390,7 @@ body{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(to right,rgb(60, 60, 60), var(--bg-contact,));
+    background:linear-gradient(to right,rgb(0, 0, 0), var(--bg-contact), var(--bg-contact));
 }
 
 form{
