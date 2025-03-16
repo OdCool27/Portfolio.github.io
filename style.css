@@ -24,10 +24,11 @@ html{
     scroll-behavior: smooth;
 }
 
+/*
 *{
     outline: 1px solid red !important;
     border: 1px solid yellow;
-}
+}*/
 
 
 @media (max-width:768px){
