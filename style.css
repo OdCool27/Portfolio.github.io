@@ -25,7 +25,10 @@ html{
 }
 
 @media (max-width:768px){
-    body, html{ overflow-x:hidden;}
+    body, html{ 
+        overflow-x:hidden;
+        width:100vw;
+    }
 }
 
 h1, h2, h3, p{
