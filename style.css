@@ -24,6 +24,11 @@ html{
     scroll-behavior: smooth;
 }
 
+* {
+    outline: 1px solid red;
+}
+
+
 @media (max-width:768px){
     body, html{ 
         overflow-x:hidden;
