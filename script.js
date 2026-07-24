@@ -1,3 +1,7 @@
+const year = new Date().getFullYear();
+document.getElementById("year").innerHTML = year;
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementsByName("contactForm")[0];
     const emailInput = document.getElementsByName("email")[0];
@@ -72,3 +76,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
